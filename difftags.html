@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements of HTML5</title>
+</head>
+
+<body>
+    <h1>Semantic Elements in HTML5</h1>
+    <p>
+        Semantic elements in HTML5 are tags that clearly describe their meaning in a human- and machine-readable way.<br> The semantic HTML tags help the search engines and other user devices to determine the importance and context of web pages.<br>This
+        sematic tags provide web browsers with instructions about the web page, such as where to display images, and how the document is structured.
+
+    </p>
+    <hr>
+
+    <h2>Purpose and Use of <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;aside&gt;</code> Elements</h2>
+    <article>
+        <h3>&lt;article&gt; Element</h3>
+        <p>This element represents an independent, self-contained content, such as a blog post, a forum post, or a news article.</p>
+    </article>
+
+    <section>
+        <h3>&lt;section&gt; Element</h3>
+        <p>This element defines a thematic grouping of content, typically with a heading.<br> It helps in organizing the content of a document.</p>
+    </section>
+
+    <aside>
+        <h3>&lt;aside&gt; Element</h3>
+        <p>This element is used for content that is tangentially related to the content around it, such as a sidebar or a pull quote.</p>
+    </aside>
+    <hr>
+    <h2>Differences between <code>&lt;canvas&gt;</code> and <code>&lt;svg&gt;</code> Elements in HTML5</h2>
+    <p>
+        SVG( Scalable Vector Graphics) is used to create vector-based graphics, whereas Canvas can render both vector and raster graphics.<br>SVG graphics are stored as DOM elements, which allows them to be manipulated by CSS and JavaScript.<br>Canvas
+        graphics are stored as bitmap images, meaning they are separate from the document and can only be modified by redrawing them. </p>
+
+    <h2>Using <code>&lt;canvas&gt;</code> and <code>&lt;svg&gt;</code> Elements</h2>
+    <h3>Canvas Example</h3>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid rgb(239, 14, 14);"></canvas>
+
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+        context.font = '200px Arial';
+    </script>
+
+    <h3>SVG Example</h3>
+    <svg width="200" height="100">
+    <rect width="200" height="200" style="fill:rgb(232, 19, 19);" />
+  </svg>
+</body>
+
+</html>
